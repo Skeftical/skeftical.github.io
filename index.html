@@ -41,13 +41,10 @@
               </a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="/project.html">Projects</a>
+              <a class="nav-link" href="#projects">Projects</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="/publications.html">Publications</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Blog</a>
+              <a class="nav-link" href="#publications">Publications</a>
             </li>
           </ul>
         </div>
@@ -58,22 +55,127 @@
     <div class="container">
 
       <!-- Page Heading -->
-      <h1 class="my-4">
-        <small>Bio :</small>
-      </h1>
+      <h3 class="my-4">
+        <small>About me :</small>
+      </h3>
       <p>
         I am currently a PhD student and a member of the IDA section within the School of Computer Science at the University of Glasgow. I obtained my BSc (Hons) in 2016 from the School Of Computing Science at the University of Glasgow. My research is focused on creating Machine Learning models that can be applied in Database Systems and Big Data contexts to expedite query processing along with accurate explanations for the results.
 
-
       </p>
-      <h1 class="my-4">
-        <small>Social :</small>
-      </h1>
+
+    <section id='projects'>
+      <h3 class="my-4">
+        <small>Projects :</small>
+      </h3>
+      <hr />
+      <ul>
+      <li><strong><a href="https://www.kaggle.com/skeftical/chicago-crimes-eda-spatio-temporal">EDA Analysis for Chicago Crimes<br />
+      </a></strong>An EDA analysis for Chicago Crimes focusing on the spatial-temporal dimensions
+      of the dataset. In this kaggle kernel I construct interesting visualisations that answer questions that I had when I first
+      encountered the dataset. I also comment on any on the findings and answer subsequent questions generated.
+    </li>
+      </ul>
+      <hr />
+      <ul>
+      <li><strong><a href="https://github.com/Skeftical/Research-Paper-Recommender">Research Paper Recommender<br />
+      </a></strong>This project is aimed at helping researchers and people who
+      read scientific papers find new papers that might be of interest to them.
+      It leverages arXiv and recent developments in word embeddings
+      (using a popular library gensim) to automatically fetch new papers for
+      a given category and then add them to a specified folder if they are found
+      to be similar to a list of given papers already in the user's library.</li>
+      </ul>
+      <hr />
+      <ul>
+      <li><strong><a href="https://github.com/Skeftical/GrowingNetworks">Growing Networks<br />
+      </a></strong>An implementation of the algorithm listed in the paper
+      "A self-organising network that grows when required".
+       This algorithm can be used for clustering tasks, vector quantization tasks and dimensionality reduction tasks</li>
+      </ul>
+      <hr />
+      <ul>
+      <li><strong><a href="https://github.com/Skeftical/cyprus_budget_explorer">Cyprus Budget Explorer<br />
+      </a></strong>  This project aims to build a system that would allow for exploring the budget
+       of the Republic of Cyprus. The data is available in a pdf form from here : http://bit.ly/2biYQ0y
+        Because the data is not available in any other form the pdf file was
+        parsed and cleaned using Tabula and Google Refine. The extracted data
+         is available in a clean format in "proupologismos-revised-csv.csv".
+</li>
+      </ul>
+      <hr />
+      <ul>
+      <li><strong><a href="https://github.com/Skeftical/MapReduce-HBase-tests">MapReduce/HBase code examples<br />
+      </a></strong>  As part of the Big Data Course, implemented a number of algorithms performing <i>top-k</i> queries,
+      exploratory analysis and more. The code examples, show how to use <i>secondary sorting</i> how to efficiently leverage
+      the clean-up phase of Mappers and Reducers.
+       </li>
+      </ul>
+      <hr />
+    </section>
+
+    <section id='publications'>
+      <h3 class="my-4">
+        <small>Publications :</small>
+      </h3>
+      <div id="accordion">
+        <hr />
+        <ul>
+          <li>
+        <strong><a href="http://eprints.gla.ac.uk/171584/">Explaining Aggregates for Exploratory Analytics<br />
+        </a></strong>
+      </li>
+    </ul>
+        <div class="card">
+          <div class="card-header" id="headingOne">
+            <h5 class="mb-0">
+              <button class="btn btn-link" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                Analysts wishing to explore multivariate data spaces, typically pose queries...             </button>
+            </h5>
+          </div>
+
+          <div id="collapseOne" class="collapse hide" aria-labelledby="headingOne" data-parent="#accordion">
+            <div class="card-body">
+Analysts wishing to explore multivariate data spaces, typically pose queries involving selection operators, i.e., range or radius queries, which define data subspaces of possible interest and then use aggregation functions, the results of which determine their exploratory analytics interests. However, such aggregate query (AQ) results are simple scalars and as such, convey limited information about the queried subspaces for exploratory analysis.We address this shortcoming aiding analysts to explore and understand data subspaces by contributing a novel explanation mechanism coined XAXA: eXplaining Aggregates for eXploratory Analytics. XAXA’s novel AQ explanations are represented using functions obtained by a three-fold joint optimization problem. Explanations assume the form of a set of parametric piecewise-linear functions acquired through a statistical learning model. A key feature of the proposed solution is that model training is performed by only monitoring AQs and their answers on-line. In XAXA, explanations for future AQs can be computed without any database (DB) access and can be used to further explore the queried data subspaces, without issuing any more queries to the DB. We evaluate the explanation accuracy and efficiency of XAXA through theoretically grounded metrics over real-world and synthetic datasets and query workloads.
+            </div>
+          </div>
+        </div>
+        <hr />
+        <ul>
+          <li>
+        <strong><a href="https://link.springer.com/10.1007/s10489-017-1093-y">Scalable aggregation predictive analytics<br />
+        </a></strong>
+      </li>
+    </ul>
+        <div class="card">
+          <div class="card-header" id="headingOne">
+            <h5 class="mb-0">
+              <button class="btn btn-link" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                We introduce a predictive modeling solution that provides high quality predictive analytics..
+              </button>
+            </h5>
+          </div>
+
+          <div id="collapseOne" class="collapse hide" aria-labelledby="headingOne" data-parent="#accordion">
+            <div class="card-body">
+We introduce a predictive modeling solution that provides high quality predictive analytics over aggregation queries in Big Data environments. Our predictive methodology is generally applicable in environments in which large-scale data owners may or may not restrict access to their data and allow only aggregation operators like COUNT to be executed over their data. In this context, our methodology is based on historical queries and their answers to accurately predict ad-hoc queries’ answers. We focus on the widely used set-cardinality, i.e., COUNT, aggregation query, as COUNT is a fundamental operator for both internal data system optimizations and for aggregation-oriented data exploration and predictive analytics. We contribute a novel, query-driven Machine Learning (ML) model whose goals are to: (i) learn the query-answer space from past issued queries, (ii) associate the query space with local linear regression & associative function estimators, (iii) define query similarity, and (iv) predict the cardinality of the answer set of unseen incoming queries, referred to the Set Cardinality Prediction (SCP) problem. Our ML model incorporates incremental ML algorithms for ensuring high quality prediction results. The significance of contribution lies in that it (i) is the only query-driven solution applicable over general Big Data environments, which include restricted-access data, (ii) offers incremental learning adjusted for arriving ad-hoc queries, which is well suited for query-driven data exploration, and (iii) offers a performance (in terms of scalability, SCP accuracy, processing time, and memory requirements) that is superior to data-centric approaches. We provide a comprehensive performance evaluation of our model evaluating its sensitivity, scalability and efficiency for quality predictive analytics. In addition, we report on the development and incorporation of our ML model in Spark showing its superior performance compared to the Spark’s COUNT method.
+            </div>
+          </div>
+        </div>
+      <hr />
+
+      </div>
+
+    </section>
+
+
     <section class='social'>
+      <h3 class="my-4">
+        <small>Social :</small>
+      </h3>
     <a href="https://www.linkedin.com/in/fotis-savva/" alt="LinkedIn" title="LinkedIn"><i class="fab fa-2x fa-linkedin-in"></i></a>
     <a href="https://github.com/Skeftical" alt="GitHub" title="GitHub"><i class="fab fa-2x fa-github"></i></a>
     <a href="https://twitter.com/ThinkinRandom" alt="Twitter" title="Twitter"><i class="fab fa-2x fa-twitter"></i></a>
-<a href="mailto:f.savva.1@research.gla.ac.uk" alt="Email" title="Email"><i class="fab fa-2x fa-envelope"></i></a>
+    <a href="mailto:f.savva.1@research.gla.ac.uk" alt="Email" title="Email"><i class="fa-2x far fa-envelope"></i></a>
     </section>
     </div>
     <!-- /.container -->
