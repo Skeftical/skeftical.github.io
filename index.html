@@ -1,141 +1,114 @@
 <!DOCTYPE html>
 <html lang="en">
 
-  <head>
-      <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-164133889-1"></script>
-    <script>
+<head>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-164133889-1"></script>
+  <script>
     window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
+    function gtag() { dataLayer.push(arguments); }
     gtag('js', new Date());
 
     gtag('config', 'UA-164133889-1');
-    </script>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="">
-    <meta name="author" content="">
+  </script>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
 
-    <title>Fotis Savva</title>
+  <title>Fotis Savva</title>
 
-    <!-- Bootstrap core CSS -->
-    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
-    <style>
+  <!-- Bootstrap core CSS -->
+  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css"
+    integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+  <style>
     .fa {
-      color : black;
+      color: black;
     }
+  </style>
+  <!-- Custom styles for this template -->
+  <link href="css/1-col-portfolio.css" rel="stylesheet">
 
+</head>
 
-    </style>
-    <!-- Custom styles for this template -->
-    <link href="css/1-col-portfolio.css" rel="stylesheet">
+<body>
 
-  </head>
-
-  <body>
-
-    <!-- Navigation -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
-      <div class="container">
-        <a class="navbar-brand" href="#">Fotis Savva</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarResponsive">
-          <ul class="navbar-nav ml-auto">
-            <li class="nav-item active">
-              <a class="nav-link" href="#">Home
-                <span class="sr-only">(current)</span>
-              </a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="pages/projects.html#projects">Projects
-              </a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="pages/publications.html#publications">Publications</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="pages/talks.html#talks">Talks</a>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </nav>
-
-    <!-- Page Content -->
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
     <div class="container">
-      <div class="row">
-        <div class="col-md-3">
-          <div class="sidebar-about">
-            <p></p>
-        		<img class="rounded-circle" src="images/fotis.jpg">
-              <h1>
-                  Fotis Savva
-              </h1>
-              <p class="lead">Machine Learning for Databases</p>
-            </div>
-        </div>
-        <div class="col-md-9">
-          <h3 class="my-4">
-            <small>About me :</small>
-          </h3>
-          <p>
-            <i>Update 03/10/2020: I have submitted my thesis and have joined Oracle Labs.</i></br>
-            I am currently a PhD student and a member of the <a href="http://www.dcs.gla.ac.uk/essence/">Essence</a> group and
-            of the <a href='https://www.gla.ac.uk/schools/computing/research/researchsections/ida-section/'>IDA</a> section
-            within the School of Computer Science at the University of Glasgow.
-            I obtained my BSc (Hons) in 2016 from
-             the School Of Computing Science at the University of Glasgow.
-
-
-          </p>
-          <h3 class="my-4">
-            <small>Research Interests :</small>
-          </h3>
-          <p>
-            My work is focused on applying Machine Learning models to assist in data exploration
-            and in Approximate Query Processing. The main theme revolves around Query-Driven learning,
-            which outlines the methodology of exploiting past queries to learn how aggregate statistics
-            change.
-            Throughout my PhD I have investigated and published work into :
-            <ul>
-              <li>How Machine Learning models can explain data subspaces to guide exploratory analysis
-              </li>
-              <li>How Query-Driven learning can be applied for Approximate Query Processing with error guarantees
-              </li>
-              <li>
-                How can the process of identifying interesting subspaces can be expedited by the use of machine learning models that serve as surrogate analytic functions
-              </li>
-              <li>
-                How trained Machine Learning models can be adapted when faced with non-stationary distributions using approximate detection mechanisms.
-              </li>
-            </ul>
-          </p>
-
-          <div>
+      <a class="navbar-brand" href="#">Fotis Savva</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive"
+        aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="#">Home
+              <span class="sr-only">(current)</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="pages/projects.html#projects">Projects
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="pages/publications.html#publications">Publications</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="pages/talks.html#talks">Talks</a>
+          </li>
+        </ul>
       </div>
-      <!-- Page Heading -->
-
-
-
-    <section class='social'>
-      <h3 class="my-4">
-        <small>Social :</small>
-      </h3>
-    <a style="color:black" href="https://www.linkedin.com/in/fotis-savva/" alt="LinkedIn" title="LinkedIn"><i class="fab fa-2x fa-linkedin-in"></i></a>
-    <a style="color:black" href="https://github.com/Skeftical" alt="GitHub" title="GitHub"><i class="fab fa-2x fa-github"></i></a>
-    <a style="color:black" href="https://twitter.com/ThinkinRandom" alt="Twitter" title="Twitter"><i class="fab fa-2x fa-twitter"></i></a>
-    <a style="color:black" href="mailto:f.savva.1@research.gla.ac.uk" alt="Email" title="Email"><i class="fa-2x far fa-envelope"></i></a>
-    </section>
     </div>
-    <!-- /.container -->
+  </nav>
 
-    <!-- Footer -->
-    <!-- Bootstrap core JavaScript -->
-    <script src="vendor/jquery/jquery.min.js"></script>
-    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-  </body>
+  <!-- Page Content -->
+  <div class="container">
+    <div class="row">
+      <div class="col-md-3">
+        <div style="text-align: center;" class="sidebar-about">
+          <p></p>
+          <img class="rounded-circle" src="images/fotis.jpg">
+          <h1>
+            Fotis Savva
+          </h1>
+          <p class="lead">Applied Machine Learning</p>
+          <section class='social'>
+            <a style="color:black" href="https://www.linkedin.com/in/fotis-savva/" alt="LinkedIn" title="LinkedIn"><i
+                class="fab fa-2x fa-linkedin-in"></i></a>
+            <a style="color:black" href="https://github.com/Skeftical" alt="GitHub" title="GitHub"><i
+                class="fab fa-2x fa-github"></i></a>
+            <a style="color:black" href="https://twitter.com/ThinkinRandom" alt="Twitter" title="Twitter"><i
+                class="fab fa-2x fa-twitter"></i></a>
+
+          </section>
+        </div>
+      </div>
+      <div class="col-md-9">
+        <p>
+          I am a Principal Member of Technical Staff at Oracle, specializing in applied Machine Learning solutions for
+          MySQL HeatWave. </br>
+          I hold a PhD in Computer Science from the University of Glasgow, where I was a member of the <a
+            href="https://www.gla.ac.uk/schools/computing/research/researchsections/ida-section/">Information, Data &
+            Analysis</a> group.
+          My work focused on developing innovative solutions to enhance data exploration and expedite data computations
+          using Machine Learning.
+          Prior to my PhD, I graduated with a BSc (Honors 1st Class) in Computer Science from the University of Glasgow.
+        </p>
+        <!-- Page Heading -->
+
+
+
+
+      </div>
+      <!-- /.container -->
+
+      <!-- Footer -->
+      <!-- Bootstrap core JavaScript -->
+      <script src="vendor/jquery/jquery.min.js"></script>
+      <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+</body>
 
 </html>
